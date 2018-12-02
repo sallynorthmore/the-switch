@@ -15,12 +15,7 @@
 /* stylelint-disable declaration-property-unit-whitelist, plugin/font-size-whitelist, selector-max-type, chrismendis/declaration-use-variable-or-custom-fn */
 
 html {
-	font-family: 'Lora', serif;
+	font-family: 'Sorts Mill Goudy', serif;
 	font-size: 100%; /* 16px */
 }
-
-h1 {
-	font-family: 'Noto Serif', serif;
-}
-
 /* stylelint-enable */

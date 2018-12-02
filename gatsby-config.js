@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'The Switch',
-    description: 'Website for the-switch.org',
+    description: 'Chronicling a journey to a life without plastic',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

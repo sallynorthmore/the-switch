@@ -1,7 +1,0 @@
-/* Banner */
-
-@import '../../styles/css/custom-properties.css';
-
-.title {
-	font: 400 var(--type-3) 'Carter One', serif;
-}

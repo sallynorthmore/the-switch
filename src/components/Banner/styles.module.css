@@ -1,0 +1,24 @@
+/* Banner */
+
+@import '../../styles/css/custom-properties.css';
+
+.banner {
+	text-align: center;
+}
+
+.title {
+	color: var(--black);
+	font: 400 var(--type-4) 'Carter One', serif;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.tagline {
+	font: 400 var(--type-1) 'Sorts Mill Goudy', serif;
+	margin: auto;
+	max-width: 220px;
+	width: 80%;
+}
