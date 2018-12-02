@@ -19,11 +19,17 @@
 	color: var(--black);
 	display: block;
 	font: 700 var(--type-2) 'Lora', sans-serif;
-	/* font: 900 var(--type-2) 'Lobster', sans-serif; */
 	text-decoration: none;
 }
 
 .postBody {
+	font: 400 var(--type-0) 'PT Serif', sans-serif;
+	margin: 1rem 0 0;
+}
+
+.postLink {
+	color: var(--black);
+	display: block;
 	font: 400 var(--type-0) 'PT Serif', sans-serif;
 	margin: 1rem 0 0;
 }
