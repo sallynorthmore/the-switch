@@ -1,0 +1,16 @@
+/* Banner */
+
+@import '../../styles/css/custom-properties.css';
+
+.banner {
+	background: blue;
+	text-align: center;
+}
+
+.title {
+	font: 400 var(--type-3) 'Carter One', serif;
+}
+
+.tagline {
+	font: 400 var(--type-2) 'Noto Serif', serif;
+}

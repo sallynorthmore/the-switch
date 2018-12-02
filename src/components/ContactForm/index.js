@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { navigate } from 'gatsby';
-import { ContactFormComponent, Title, Label, Button } from './styles';
+// import { ContactFormComponent, Title, Label, Button } from './styles';
 
 const encode = data => {
 	return Object.keys(data)
@@ -9,7 +9,7 @@ const encode = data => {
 		.join('&');
 };
 
-class ContactForm extends React.Component {
+class ContactForm extends Component {
 	state = { name: '', email: '', message: '' };
 
 	handleSubmit = e => {
@@ -38,10 +38,10 @@ class ContactForm extends React.Component {
 		const { name, email, message } = this.state;
 
 		return (
-			<ContactFormComponent>
-				<Title>{title}</Title>
+			<div>
+				<h1>{title}</h1>
 				<form onSubmit={this.handleSubmit}>
-					<Label>
+					<label>
 						Your Name:
 						<input
 							type="text"
@@ -50,9 +50,9 @@ class ContactForm extends React.Component {
 							onChange={this.handleChange}
 							required
 						/>
-					</Label>
+					</label>
 
-					<Label>
+					<label>
 						Your Email:
 						<input
 							type="email"
@@ -61,9 +61,9 @@ class ContactForm extends React.Component {
 							onChange={this.handleChange}
 							required
 						/>
-					</Label>
+					</label>
 
-					<Label>
+					<label>
 						Message:
 						<textarea
 							name="message"
@@ -71,11 +71,11 @@ class ContactForm extends React.Component {
 							required
 							onChange={this.handleChange}
 						/>
-					</Label>
+					</label>
 
-					<Button type="submit">Send</Button>
+					<button type="submit">Send</button>
 				</form>
-			</ContactFormComponent>
+			</div>
 		);
 	}
 }

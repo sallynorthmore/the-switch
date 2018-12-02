@@ -1,0 +1,23 @@
+/*
+ * Shared custom properties
+ */
+
+:root {
+  /*
+    Naming convention: type-0 is base font,
+    anything smaller is -X, e.g. type--1,
+    anything bigger is X, e.g. type-1
+
+    Spacing and line-height are multiples of 4
+  */
+  --type--2: 0.75rem/1rem;
+  --type--1: 0.875rem/1.25rem;
+  --type-0: 1rem/1.5rem;
+  --type-1: 1.25rem/1.5rem;
+  --type-2: 1.5rem/2rem;
+  --type-3: 2rem/2.5rem;
+
+  /* colors */
+  --black: black;
+  --white: white;
+}

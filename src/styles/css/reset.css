@@ -1,0 +1,19 @@
+/**
+ * Minimal reset
+ */
+
+/* stylelint-disable selector-max-universal, selector-pseudo-class-no-unknown, selector-max-type, property-whitelist */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+:global(#root) {
+	height: 100%;
+}
+/* stylelint-enable  */

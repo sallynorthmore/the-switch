@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+// import { FaArrowDown } from 'react-icons/fa';
+// import { FooterComponent, Inner, Anchor } from './styles';
 
-import { FaArrowDown } from 'react-icons/fa';
-import { FooterComponent, Inner, Anchor } from './styles';
-
-class Footer extends React.Component {
+class Footer extends Component {
 	state = {
 		isVisible: true,
 	};
@@ -29,15 +28,15 @@ class Footer extends React.Component {
 		const { isVisible } = this.state;
 
 		return (
-			<FooterComponent onClick={handleClick}>
+			<footer onClick={handleClick}>
 				{isVisible && (
-					<Inner>
-						<Anchor>
+					<div>
+						<div>{/*
 							<FaArrowDown />
-						</Anchor>
-					</Inner>
+*/}</div>
+					</div>
 				)}
-			</FooterComponent>
+			</footer>
 		);
 	}
 }

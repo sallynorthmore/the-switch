@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import styles from './styles.css';
 // import logo from '../img/logo.svg'
-import { BannerComponent, Title, Contact } from './styles';
 
 const Banner = () => (
-	<BannerComponent>
-		<Title>
-			<Link to="/">Sally Northmore</Link>
-		</Title>
-		<Contact to="/contact">Contact</Contact>
-	</BannerComponent>
+	<header role="banner" className={styles.banner}>
+		<h1 className={styles.title}>
+			<Link to="/">The Switch</Link>
+		</h1>
+		<p className={styles.tagline}>
+			Chronocling an attempt to live plastic-free
+		</p>
+	</header>
 );
 
 export default Banner;

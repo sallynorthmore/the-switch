@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Element, scroller } from 'react-scroll';
-
 import Grid from '../Grid';
 import Message from '../Message';
 import Footer from '../Footer';
-import { HomeComponent, Headline, Title, Projects } from './styles';
+// import { HomeComponent, Headline, Title, Projects } from './styles';
+// import {} from './styles';
 
-import {} from './styles';
-
-class Home extends React.Component {
+class Home extends Component {
 	state = {
 		isContact: false,
 		contactName: '',
@@ -50,30 +48,30 @@ class Home extends React.Component {
 			: null;
 
 		return (
-			<HomeComponent>
+			<div>
 				{messageText && <Message message={messageText} />}
 
-				<Headline>
+				<div>
 					<span>
 						I&rsquo;m a freelance frontend web developer living and working in
 						London
 					</span>
-				</Headline>
+				</div>
 
-				<Element name="scroll-to-element">
-					<Projects
+				<div name="scroll-to-element">
+					<div
 						ref={section => {
 							this.Projects = section;
 						}}
 					>
-						<Title>Some things I&rsquo;ve built</Title>
+						<h2>Some things I&rsquo;ve built</h2>
 
 						<Grid items={projects} />
-					</Projects>
-				</Element>
+					</div>
+				</div>
 
 				<Footer to="scroll-to-element" handleClick={this.scrollTo} />
-			</HomeComponent>
+			</div>
 		);
 	}
 }
