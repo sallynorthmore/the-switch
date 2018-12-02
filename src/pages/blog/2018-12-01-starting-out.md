@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: So, I read this book...
-date: 2018-12-02T17:00:00.000Z
+date: 2018-12-01T17:00:00.000Z
 description: A friend gave me a book about vegetarianism, and inside I groaned.
 tags:
   - vegetarianism
