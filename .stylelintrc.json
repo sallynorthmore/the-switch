@@ -1,0 +1,21 @@
+{
+  "extends": ["stylelint-config-recommended"],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-number-z-index-constraint",
+    "stylelint-declaration-use-variable-or-custom-fn"
+  ],
+  "rules": {
+    "block-no-empty": null,
+    "unit-whitelist": ["deg", "rem", "vh", "vw", "%", "ms", "px", "fr"],
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-alphabetical-order": [true, { "severity": "warning" }],
+    "plugin/number-z-index-constraint": {
+      "min": 0,
+      "max": 10
+    },
+    "chrismendis/declaration-use-variable-or-custom-fn": [
+      ["/color/", "font-size", "font", "line-height"]
+    ]
+  }
+}

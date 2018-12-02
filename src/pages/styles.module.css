@@ -1,0 +1,29 @@
+/* Index */
+
+@import '../styles/css/custom-properties.css';
+
+.posts {
+	margin: 4rem 0 0;
+	text-align: left;
+}
+
+.post:not(:first-child) {
+	margin: 3rem 0 0;
+}
+
+.postDate {
+	font: 700 var(--type--1) 'Open Sans', sans-serif;
+}
+
+.postTitle {
+	color: var(--black);
+	display: block;
+	font: 700 var(--type-2) 'Lora', sans-serif;
+	/* font: 900 var(--type-2) 'Lobster', sans-serif; */
+	text-decoration: none;
+}
+
+.postBody {
+	font: 400 var(--type-0) 'PT Serif', sans-serif;
+	margin: 1rem 0 0;
+}

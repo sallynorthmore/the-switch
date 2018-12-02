@@ -1,0 +1,7 @@
+/*
+ * Shared custom properties / breakpoints
+ */
+
+@custom-media --tablet (min-width: 46rem);
+@custom-media --desktop (min-width: 60rem);
+@custom-media --desktopLarge (min-width: 90rem);
