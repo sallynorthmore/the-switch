@@ -31,6 +31,12 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Lora`, `Noto Serif`, `Carter One`, `PT Serif`]
+      }
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
