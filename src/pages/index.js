@@ -25,9 +25,10 @@ export default class IndexPage extends Component {
 								</small>
 							</h2>
 							<p className={styles.postBody}>{post.excerpt}</p>
-							<p>
-								<Link to={post.fields.slug}>Keep Reading →</Link>
-							</p>
+
+							<Link className={styles.postLink} to={post.fields.slug}>
+								Keep Reading →
+							</Link>
 						</div>
 					))}
 				</section>
@@ -52,7 +53,7 @@ export const pageQuery = graphql`
 		) {
 			edges {
 				node {
-					excerpt(pruneLength: 400)
+					excerpt(pruneLength: 200)
 					id
 					fields {
 						slug
