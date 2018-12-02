@@ -2,7 +2,9 @@
 templateKey: blog-post
 title: 'So, I read this book...'
 date: 2018-12-01T17:00:00.000Z
-description: 'A friend gave me a book about vegetarianism, and inside I groaned.'
+description: >-
+  A friend gave me a book about eating meat. I assumed it was a vegetarian
+  conversion tool, and I groaned inside.
 tags:
   - vegetarianism
 ---
