@@ -2,17 +2,6 @@
 
 @import '../styles/css/custom-properties.css';
 
-.chrome {
-	padding: 2rem;
-	text-align: center;
-}
-
-.inner {
-	margin: 0 auto;
-	max-width: 640px;
-	text-align: left;
-}
-
 .posts {
 	margin: 4rem 0 0;
 	text-align: left;
@@ -30,7 +19,6 @@
 	color: var(--black);
 	display: block;
 	font: 700 var(--type-2) 'Lora', sans-serif;
-
 	/* font: 900 var(--type-2) 'Lobster', sans-serif; */
 	text-decoration: none;
 }

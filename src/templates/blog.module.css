@@ -1,0 +1,31 @@
+/* Blog post */
+
+@import '..//styles/css/custom-properties.css';
+
+.title {
+	font: 700 var(--type-2) 'Lora', sans-serif;
+	margin: 3rem auto 0;
+	max-width: 90%;
+	text-align: center;
+}
+
+.content {
+	margin: 2rem 0 0;
+}
+
+.description {
+	font: 700 var(--type--1) 'Open Sans', sans-serif;
+	margin: 1rem auto 0;
+	max-width: 90%;
+	text-align: center;
+}
+
+.content div > * {
+	font: 400 var(--type-0) 'PT Serif', sans-serif;
+	margin: 2rem 0 0;
+}
+
+.content div a {
+	color: var(--black);
+	text-decoration: underline;
+}

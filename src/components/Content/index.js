@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './styles.module.css';
 
 export const HTMLContent = ({ content, className }) => (
 	<div className={className} dangerouslySetInnerHTML={{ __html: content }} />
 );
 
-const Content = ({ content, className }) => (
-	<div className={className}>{content}</div>
+const Content = ({ content }) => (
+	<div className={styles.content}>{content}</div>
 );
 
 Content.propTypes = {

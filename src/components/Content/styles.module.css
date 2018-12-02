@@ -1,0 +1,12 @@
+/* Blog post */
+
+.content {
+	& * + * {
+		margin: 2rem 0 0;
+	}
+
+	& a {
+		color: var(--black);
+		text-decoration: underline;
+	}
+}
