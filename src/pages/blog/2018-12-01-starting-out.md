@@ -1,11 +1,12 @@
 ---
 templateKey: blog-post
-title: So, I read this book...
+title: 'So, I read this book...'
 date: 2018-12-01T17:00:00.000Z
-description: A friend gave me a book about vegetarianism, and inside I groaned.
+description: 'A friend gave me a book about vegetarianism, and inside I groaned.'
 tags:
   - vegetarianism
 ---
+![](/img/post-1.jpg)
 
 About a year ago, my friend and I lamented how infrequently we read these days, so we lent each other a book. She handed me “Eating Animals”, by Jonathan Safron Foer, and quietly to myself, I groaned.
 
