@@ -1,0 +1,9 @@
+/* Footer */
+
+@import '../../styles/css/custom-properties.css';
+
+.Footer {
+	color: var(--grey);
+	font: 400 var(--type--1) sans-serif;
+	padding: 2rem;
+}
