@@ -71,7 +71,7 @@ module.exports = {
       },
       {
         type: 'add',
-        path: '../src/components/{{properCase name}}/styles.css',
+        path: '../src/components/{{properCase name}}/styles.module.css',
         templateFile: './component/styles.hbs',
         abortOnFail: true,
       },
