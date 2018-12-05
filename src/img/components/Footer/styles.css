@@ -41,7 +41,7 @@
 
 .Footer-link {
 	color: color-mod(var(--white) alpha(0.5));
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'OpenSans', sans-serif;
 	font-size: 11px;
 	letter-spacing: 1.44px;
 	padding: 5px 0;
@@ -96,7 +96,7 @@
 	background: var(--Footer-darkGrey);
 	color: var(--Footer-mediumGrey);
 	display: inline-block;
-	font: 300 14px/1 'Open Sans', sans-serif;
+	font: 300 14px/1 'OpenSans', sans-serif;
 	padding: 0 1.5rem;
 	position: relative;
 	text-transform: uppercase;

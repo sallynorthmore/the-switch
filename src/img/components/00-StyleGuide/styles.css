@@ -29,7 +29,7 @@
 }
 
 .Styleguide-subtitle {
-	font: 400 var(--type-1) 'Open Sans', sans-serif;
+	font: 400 var(--type-1) 'OpenSans', sans-serif;
 	margin: 1rem 0 0;
 
 	& > span {
@@ -42,5 +42,5 @@
 }
 
 .Styleguide-details {
-	font: 300 var(--type--2) 'Open Sans', sans-serif;
+	font: 300 var(--type--2) 'OpenSans', sans-serif;
 }

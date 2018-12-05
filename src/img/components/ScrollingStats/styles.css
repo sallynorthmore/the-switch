@@ -17,7 +17,7 @@
 }
 
 .ScrollingStats-title {
-	font: 700 var(--type--1) 'Open Sans', sans-serif;
+	font: 700 var(--type--1) 'OpenSans', sans-serif;
 	margin: 1rem 0 0;
 	position: relative;
 	z-index: 2;
@@ -42,7 +42,7 @@
 
 .ScrollingStats-label {
 	color: var(--white);
-	font: 400 var(--type--2) 'Open Sans', sans-serif;
+	font: 400 var(--type--2) 'OpenSans', sans-serif;
 	left: 50%;
 	position: absolute;
 	text-align: center;
@@ -53,7 +53,7 @@
 }
 
 .ScrollingStats-value {
-	font: 700 var(--type--2) 'Open Sans', sans-serif;
+	font: 700 var(--type--2) 'OpenSans', sans-serif;
 }
 
 .ScrollingStats-captions {

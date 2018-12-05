@@ -9,7 +9,7 @@
 
 .ImageGrid-item {
   flex: 0 0 50%;
-  font: 400 var(--type--2) 'Open Sans', sans-serif;
+  font: 400 var(--type--2) 'OpenSans', sans-serif;
   padding: 1rem 0 0 1rem;
   text-align: center;
 }

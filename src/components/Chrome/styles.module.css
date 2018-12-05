@@ -7,6 +7,15 @@
 	text-align: center;
 }
 
+.banner {
+	transform-origin: top center;
+	transition: 195ms transform ease-out;
+}
+
+.isSmaller {
+	transform: scale(0.75);
+}
+
 .inner {
 	margin: 0 auto;
 	max-width: 640px;

@@ -10,7 +10,7 @@
 	border-radius: 0.25rem;
 	box-shadow: 0 0 5px color-mod(var(--black) alpha(60%));
 	display: block;
-	font: 400 var(--type-0) 'Open Sans', sans-serif;
+	font: 400 var(--type-0) 'OpenSans', sans-serif;
 	left: 0;
 	max-width: 374px;
 	opacity: 0;

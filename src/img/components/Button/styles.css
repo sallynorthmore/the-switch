@@ -49,7 +49,7 @@
 .Button-text {
 	align-items: center;
 	display: flex;
-	font: 600 var(--type-0) 'Open Sans', sans-serif;
+	font: 600 var(--type-0) 'OpenSans', sans-serif;
 	justify-content: center;
 	text-decoration: none;
 	text-transform: uppercase;

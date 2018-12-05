@@ -56,7 +56,7 @@
 
 .MobileMenu-bodyInner {
 	color: var(--white);
-	font: 400 1.375rem/2.5rem 'Open Sans', sans-serif; /* Custom font */ /* stylelint-disable-line */
+	font: 400 1.375rem/2.5rem 'OpenSans', sans-serif; /* Custom font */ /* stylelint-disable-line */
 	height: auto;
 	left: 0;
 	padding: 1rem;

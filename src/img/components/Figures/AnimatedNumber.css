@@ -6,7 +6,7 @@
 .AnimatedNumber-text {
 	color: var(--black);
 	display: inline-block;
-	font: 700 var(--type-4) 'Open Sans', sans-serif;
+	font: 700 var(--type-4) 'OpenSans', sans-serif;
 	position: relative;
 	will-change: transform;
 }

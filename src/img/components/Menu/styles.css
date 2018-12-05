@@ -75,7 +75,7 @@
 
 .Menu-bodyInner {
 	color: var(--white);
-	font: 400 1rem/2rem 'Open Sans', sans-serif; /* Custom font */ /* stylelint-disable-line */
+	font: 400 1rem/2rem 'OpenSans', sans-serif; /* Custom font */ /* stylelint-disable-line */
 	height: 100%;
 	padding: 1rem 2rem 2rem;
 	width: 100%;
