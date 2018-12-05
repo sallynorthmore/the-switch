@@ -1,0 +1,123 @@
+/* Sharing */
+
+@import '../../styles/css/custom-properties.css';
+
+@keyframes Sharing-linkEnter {
+	from {
+		opacity: 0.5;
+		transform: scale(0.8);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.Sharing {
+	color: var(--white);
+	display: flex;
+	height: 54px;
+	justify-content: flex-end;
+	max-width: 150px;
+}
+
+.Sharing-inner {
+	background: var(--orange);
+	border-radius: 2rem;
+	display: inline-flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+}
+
+.Sharing-button {
+	align-items: center;
+	appearance: none;
+	background: var(--orange);
+	border: none;
+	border-radius: 2rem;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	color: var(--white);
+	display: inline-flex;
+	height: 54px;
+	justify-content: center;
+	outline: none;
+	padding: 0;
+	position: relative;
+	white-space: normal;
+	width: 45px;
+
+	&::before {
+		background: #ff7600; /* stylelint-disable-line */
+		content: '';
+		display: block;
+		height: 4px;
+		position: absolute;
+		right: -4px;
+		top: 0;
+		width: 4px;
+	}
+
+	& svg {
+		margin: auto;
+	}
+}
+
+.Sharing-items {
+	align-items: center;
+	display: inline-flex;
+	justify-content: flex-end;
+	opacity: 0;
+	overflow: hidden;
+	transform-origin: right center;
+	width: 0;
+
+	&.isOpen {
+		opacity: 1;
+		overflow: auto;
+		width: auto;
+
+		& .Sharing-item {
+			animation-name: Sharing-linkEnter;
+		}
+	}
+}
+
+/* stylelint-disable-next-line */
+.Sharing-item {
+	animation-delay: 300ms;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	display: block;
+	flex: 0 0 36px;
+	height: 36px;
+	margin-left: 0.75rem;
+	opacity: 0;
+	transform: scale(0.5);
+	transform-origin: center;
+	width: 36px;
+
+	/* stylelint-disable-next-line */
+	&:first-child {
+		margin-left: 1rem;
+	}
+
+	/* stylelint-disable-next-line */
+	&:last-child {
+		animation-delay: 400ms;
+	}
+}
+
+.Sharing-link {
+	border: 1px solid var(--white);
+	border-radius: 100%;
+	color: var(--white);
+	display: flex;
+	height: 100%;
+	width: 100%;
+
+	& svg {
+		margin: auto;
+	}
+}

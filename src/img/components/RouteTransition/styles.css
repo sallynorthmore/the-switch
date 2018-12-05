@@ -1,0 +1,53 @@
+/* stylelint-disable */
+$transitionDuration: 500ms;
+
+:export {
+  transitionDuration: $transitionDuration;
+}
+
+.transitionGroup {
+  height: 100%;
+}
+
+.transitionContainer {
+  height: 100%;
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.appear {
+  composes: fixed;
+  opacity: 0;
+  transition: opacity $transitionDuration;
+}
+
+.appearActive {
+  opacity: 1;
+}
+
+.enter {
+  composes: fixed;
+  opacity: 0;
+  transition: opacity $transitionDuration;
+}
+
+.enterActive {
+  opacity: 1;
+}
+
+.exit {
+  opacity: 1;
+  transition: opacity $transitionDuration;
+}
+
+.exitActive {
+  opacity: 0;
+}
+/* stylelint-enable */

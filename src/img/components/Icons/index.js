@@ -1,0 +1,10 @@
+export { default as Arrow } from './Arrow';
+export { default as Burger } from './Burger';
+export { default as Chevron } from './Chevron';
+export { default as CircleArrow } from './CircleArrow';
+export { default as Close } from './Close';
+export { default as Download } from './Download';
+export { default as House } from './House';
+export { default as LinkedIn } from './LinkedIn';
+export { default as Share } from './Share';
+export { default as Twitter } from './Twitter';

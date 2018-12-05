@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Chrome from '../components/Chrome';
 import '../styles/css/global.css';
 import styles from './styles.module.css';
@@ -15,6 +16,9 @@ export default class IndexPage extends Component {
 				<section className={styles.posts}>
 					{posts.map(({ node: post }) => (
 						<div key={post.id} className={styles.post}>
+							<Img
+								sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
+							/>
 							<h2>
 								<Link className={styles.postTitle} to={post.fields.slug}>
 									{post.frontmatter.title}
@@ -24,6 +28,7 @@ export default class IndexPage extends Component {
 									{post.frontmatter.date}
 								</small>
 							</h2>
+
 							<p className={styles.postBody}>{post.excerpt}</p>
 
 							<Link className={styles.postLink} to={post.fields.slug}>
@@ -62,6 +67,13 @@ export const pageQuery = graphql`
 						title
 						templateKey
 						date(formatString: "MMMM DD, YYYY")
+						featuredImage {
+							childImageSharp {
+								sizes(maxWidth: 630) {
+									...GatsbyImageSharpSizes
+								}
+							}
+						}
 					}
 				}
 			}

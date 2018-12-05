@@ -1,0 +1,133 @@
+/* Chapters */
+
+@import '../../styles/css/custom-properties.css';
+
+.Chapters {
+	position: relative;
+}
+
+.Chapters-nav {
+	display: none;
+}
+
+.Chapters-slideNav {
+	background: var(--turquoise);
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 173, 181, 1) 10%,
+		rgba(0, 121, 181, 1) 90%
+	);
+	display: block;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	transition: 195ms opacity cubic-bezier(0.4, 0, 0.6, 1);
+	z-index: -1;
+
+	&.isOpen {
+		height: 100vh;
+		left: 0;
+		opacity: 1;
+		position: fixed;
+		top: 0;
+		transition: 225ms opacity cubic-bezier(0, 0, 0.2, 1);
+		z-index: 10;
+	}
+}
+
+.Chapters-main {
+	position: relative;
+	z-index: 0;
+}
+
+.Chapters-trigger {
+	left: 0;
+	position: absolute;
+	top: 0px;
+	z-index: 3;
+
+	&.isFixed {
+		position: fixed;
+		top: 0;
+	}
+}
+
+.Chapters-backToTop {
+	align-items: center;
+	background: var(--turquoise);
+	display: flex;
+	justify-content: center;
+	padding: 3rem;
+	width: 100%;
+}
+
+.Chapters-downloadExpander {
+	bottom: 1.75rem;
+	height: 60px;
+	position: fixed;
+	right: 1.75rem;
+	text-align: right;
+	width: 300px;
+	z-index: 13; /* stylelint-disable-line plugin/number-z-index-constraint */
+}
+
+@media (--desktop) {
+	/*
+		a: Set the scroll-snap-type to proximity on the scroll container (https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-destination)
+		b: Set the alignment to the top of the chapter
+	 */
+
+	body {
+		scroll-snap-type: y proximity; /* a */
+	}
+
+	.Chapters {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.Chapters-nav {
+		background: var(--turquoise);
+		background-image: linear-gradient(var(--turquoise), var(--purple));
+		display: block;
+		flex: 0 0 420px;
+		min-height: 100vh;
+		overflow: auto;
+	}
+
+	.Chapters-navInner {
+		height: 100%;
+		position: fixed;
+		transition: 190ms transform ease;
+		width: 380px;
+
+		&.isFixed {
+			transform: translateY(-40px);
+		}
+	}
+
+	.Chapters-slideNav {
+		display: none;
+
+		&.isOpen {
+			display: none;
+		}
+	}
+
+	.Chapters-trigger {
+		display: none;
+	}
+
+	.Chapters-main {
+		flex: 1;
+		max-width: 1280px;
+
+		& > div:not(:first-child) {
+			scroll-snap-align: start; /* b */
+		}
+	}
+
+	.Chapters-downloadExpander {
+		display: none;
+	}
+}

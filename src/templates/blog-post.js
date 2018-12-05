@@ -21,7 +21,6 @@ export const BlogPostTemplate = ({
 		<section className={styles.content}>
 			{helmet || ''}
 			<h1 className={styles.title}>{title}</h1>
-			<p className={styles.description}>{description}</p>
 			<PostContent content={content} />
 			{/*
             {tags && tags.length ? (

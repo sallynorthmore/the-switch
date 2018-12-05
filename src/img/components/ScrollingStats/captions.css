@@ -1,0 +1,27 @@
+@import '../../styles/css/custom-properties.css';
+
+.Captions-items {
+	position: relative;
+	width: 100%;
+}
+
+.Captions-item {
+	background: var(--white);
+	border-radius: 0.25rem;
+	box-shadow: 0 0 5px color-mod(var(--black) alpha(60%));
+	display: block;
+	font: 400 var(--type-0) 'Open Sans', sans-serif;
+	left: 0;
+	max-width: 374px;
+	opacity: 0;
+	padding: 0.75rem;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+
+	&:nth-child(2n) {
+		margin-top: 125px;
+		opacity: 1;
+	}
+}

@@ -1,0 +1,154 @@
+/* Footer */
+
+/* stylelint-disable */
+
+@import '../../styles/css/custom-properties.css';
+
+:root {
+	--Footer-darkGrey: #14141e;
+	--Footer-mediumGrey: #6a6a72;
+}
+
+.Footer {
+	background: var(--Footer-darkGrey);
+	color: color-mod(var(--white) alpha(1));
+	padding: 1rem 1.5rem;
+}
+
+.Footer-inner {
+	display: grid;
+	grid-row: 2; /* make sure IE11 gets the right reference to grid row */
+	grid-template-areas:
+		'social'
+		'title'
+		'links'
+		'copyright';
+}
+
+.Footer-text {
+	color: color-mod(var(--white) alpha(0.5));
+	font-size: 9px;
+	letter-spacing: 1.2px;
+	line-height: 1.5;
+}
+
+.Footer-links {
+	display: flex;
+	flex-direction: column;
+	grid-area: links;
+	padding: 20px 0;
+}
+
+.Footer-link {
+	color: color-mod(var(--white) alpha(0.5));
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	letter-spacing: 1.44px;
+	padding: 5px 0;
+	text-decoration: none;
+}
+
+.Footer-link:hover {
+	color: color-mod(var(--white) alpha(1));
+}
+
+.Footer-copyright {
+	color: color-mod(var(--white) alpha(0.5));
+	font-size: 9px;
+	grid-area: copyright;
+	letter-spacing: 1.2px;
+	line-height: 1.5;
+}
+
+.Footer-tracking {
+	display: none;
+}
+
+.Footer-social {
+	display: flex;
+	grid-area: social;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 120px;
+}
+
+.Footer-title {
+	grid-area: title;
+	margin: 0 auto 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+
+	&::after {
+		background-color: var(--Footer-mediumGrey);
+		content: '';
+		display: block;
+		grid-column: span 3;
+		height: 1px;
+		position: absolute;
+		top: 1.25rem;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+.Footer-titleInner {
+	background: var(--Footer-darkGrey);
+	color: var(--Footer-mediumGrey);
+	display: inline-block;
+	font: 300 14px/1 'Open Sans', sans-serif;
+	padding: 0 1.5rem;
+	position: relative;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+@media (--desktop) {
+	.Footer {
+		padding: 2rem 1.5rem;
+		position: relative;
+	}
+
+	.Footer-inner {
+		display: grid;
+		grid-row: 2; /* make sure IE11 gets the right reference to grid row */
+		/* grid-template-columns: 2fr 1fr 3fr; */
+		grid-template-areas:
+			'title title title'
+			'links links social'
+			'copyright copyright copyright';
+	}
+
+	.Footer-social {
+		grid-area: social;
+		margin: auto 0 auto auto;
+	}
+
+	.Footer-title {
+		grid-area: title;
+	}
+
+	.Footer-links {
+		flex-direction: row;
+		grid-area: links;
+		line-height: 1.3;
+	}
+
+	.Footer-link {
+		padding: 0 15px;
+	}
+
+	.Footer-link:first-of-type {
+		padding-left: 0;
+	}
+
+	.Footer-link:last-of-type {
+		padding-right: 0;
+	}
+
+	.Footer-copyright {
+		grid-area: copyright;
+	}
+}
+
+/* stylelint-enable */

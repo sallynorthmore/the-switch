@@ -1,0 +1,285 @@
+/* Chapter */
+
+@import '../../styles/css/custom-properties.css';
+
+:root {
+	--chapterPaddingSmall: 1.25rem;
+	--chapterPaddingLarge: 2.5rem;
+}
+
+.Chapter {
+	min-height: 100vh;
+}
+
+.Chapter-header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 3.75rem var(--chapterPaddingSmall) 1rem;
+	position: relative;
+
+	&::after {
+		background: var(--jade);
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 2px;
+		left: var(--chapterPaddingSmall);
+		position: absolute;
+		width: 70px;
+	}
+}
+
+.Chapter-title {
+	background: var(--white);
+	font: 400 var(--type-2) 'NHaasGroteskDSPro-55Rg', sans-serif;
+	max-width: 70%;
+}
+
+.Chapter-number {
+	color: var(--blue);
+	display: block;
+	flex: 0 0 6rem;
+	text-align: center;
+}
+
+.Chapter-body {
+	font: 400 var(--type-0) 'Open Sans', sans-serif;
+	margin: 2.25rem 0 0;
+	max-width: 880px;
+	padding: 0 var(--chapterPaddingSmall);
+}
+
+.Chapter-imageGrid {
+	margin: 1.75rem 0;
+	max-width: 880px;
+}
+
+.Chapter-bumpChart {
+	margin: 1.75rem 0 0;
+	max-width: 450px;
+	padding: 0 var(--chapterPaddingSmall);
+}
+
+.Chapter-figures {
+	margin: 1.75rem 0;
+}
+
+.Chapter-scrollChart {
+	margin: 1.75rem 0;
+	max-width: 660px;
+	padding: 0 var(--chapterPaddingSmall);
+}
+
+.Chapter-barChart {
+	margin: 1.75rem 0;
+	max-width: 450px;
+	padding: 0 var(--chapterPaddingSmall);
+}
+
+.Chapter-insight {
+	color: var(--white);
+	margin: 3rem 0 0;
+	position: relative;
+}
+
+.Chapter-insightInner {
+	padding: 0 0 2rem;
+	position: relative;
+}
+
+/* stylelint-disable-next-line */
+.Chapter-insightImage {
+	height: auto;
+	position: relative;
+	top: -7px;
+	width: 100%;
+}
+
+/* stylelint-disable-next-line */
+.Chapter-insightContent {
+	/* margin-top: -2.5rem; */
+	position: relative;
+}
+
+/* stylelint-disable-next-line */
+.Chapter-insightTitle {
+	font: 300 var(--type-1) 'NHaasGroteskDSPro-35Lt', sans-serif;
+	letter-spacing: 0.07rem;
+	max-width: 80%;
+	padding: 0 0 0 var(--chapterPaddingSmall);
+	position: relative;
+}
+
+.Chapter-insightBody {
+	font: 400 var(--type-0) 'Open Sans', sans-serif;
+	margin: 1.5rem 0 0;
+	padding: 0 var(--chapterPaddingSmall);
+}
+
+.Chapter-share {
+	position: absolute;
+	right: 1.5rem;
+	top: -4px;
+	z-index: 5;
+}
+
+.Chapter-linkSave {
+	color: var(--white);
+	display: inline-block;
+	font: 400 var(--type-1) 'Open Sans', sans-serif;
+	margin: 2rem 0 0;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+/**
+ * modifier: insightAlternate
+ *
+ * Add to .insight to place Title
+ * at top, on smaller breakpoints
+ */
+
+.Chapter--insightAlternate {
+	padding-top: 1.5rem;
+
+	& .Chapter-share {
+		top: -4px;
+	}
+
+	& .Chapter-insightInner {
+		padding: 0 0 2rem;
+	}
+
+	& .Chapter-insightTitle {
+		max-width: 80%;
+	}
+
+	& .Chapter-insightImage {
+		top: 0;
+	}
+
+	& .Chapter-insightContent {
+		margin-top: 0.25rem;
+
+		& .Chapter-insightTitle {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 350px) {
+	.Chapter-title {
+		font: 400 var(--type-3) 'NHaasGroteskDSPro-55Rg', sans-serif;
+	}
+
+	.Chapter-insightTitle {
+		font: 300 var(--type-2) 'NHaasGroteskDSPro-35Lt', sans-serif;
+	}
+}
+
+@media (min-width: 580px) {
+	.Chapter-bumpChart,
+	.Chapter-barChart {
+		max-width: 580px;
+	}
+
+	.Chapter-insightInner {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.Chapter-insightContent {
+		flex: 0 0 50%;
+		margin-top: 0;
+		max-width: 500px;
+	}
+
+	.Chapter-insightTitle {
+		margin-top: 2rem;
+		max-width: none;
+		padding-right: 0;
+	}
+
+	.Chapter-insightImage {
+		flex: 0 0 50%;
+		margin: auto;
+		max-width: 500px;
+		position: static;
+		width: 50%;
+	}
+
+	.Chapter-insightBody {
+		margin: 1rem 0 0;
+	}
+
+	.Chapter-share {
+		top: -4px;
+	}
+
+	/**
+   * modifier: insightAlternate
+   */
+	.Chapter--insightAlternate {
+		padding-top: 0;
+
+		& .Chapter-insightTitle {
+			display: none;
+		}
+
+		& .Chapter-insightImage {
+			margin-left: 0;
+			margin-top: 0;
+		}
+
+		& .Chapter-insightContent {
+			margin-top: 0;
+			padding-right: 0.5rem;
+
+			& .Chapter-insightTitle {
+				display: block;
+			}
+		}
+	}
+}
+
+@media (--desktop) {
+	.Chapter-header {
+		padding: 3rem var(--chapterPaddingLarge) 1.25rem;
+
+		&::after {
+			left: var(--chapterPaddingLarge);
+		}
+	}
+
+	.Chapter-body {
+		margin: 2.75rem 0 0;
+		padding: 0 var(--chapterPaddingLarge);
+	}
+
+	.Chapter-imageGrid {
+		margin: 2.75rem 0 0;
+	}
+
+	.Chapter-insightTitle {
+		font: 300 var(--type-3) 'NHaasGroteskDSPro-35Lt', sans-serif;
+		margin-bottom: 1.5rem;
+	}
+
+	.Chapter-barChart,
+	.Chapter-bumpChart,
+	.Chapter-scrollChart {
+		padding: 0 var(--chapterPaddingLarge);
+	}
+
+	.Chapter-insightTitle,
+	.Chapter-insightBody {
+		padding-left: var(--chapterPaddingLarge);
+		padding-right: var(--chapterPaddingLarge);
+	}
+
+	.Chapter-linkSave {
+		font: 400 var(--type-0) 'Open Sans', sans-serif;
+	}
+}

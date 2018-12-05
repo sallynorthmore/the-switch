@@ -1,0 +1,47 @@
+/* BumpChart */
+
+@import '../../styles/css/custom-properties.css';
+
+.BumpChart {
+}
+
+.BumpChart-items {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.BumpChart-item {
+	flex: 1;
+	position: relative;
+	text-align: center;
+}
+
+.BumpChart-figure {
+	min-height: 72px;
+	overflow: hidden;
+	position: relative;
+}
+
+.BumpChart-curve {
+	position: relative;
+	top: 6px;
+}
+
+.BumpChart-value {
+	font: 700 var(--type--2) 'Open Sans', sans-serif;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 5;
+}
+
+.BumpChart-label {
+	border-top: 2px solid var(--black);
+	font: 300 var(--type--2) 'Open Sans', sans-serif;
+	padding-top: 0.5rem;
+}
+
+.BumpChart-caption {
+	font: 700 var(--type--1) 'Open Sans', sans-serif;
+	margin: 0.5rem 0 0;
+}

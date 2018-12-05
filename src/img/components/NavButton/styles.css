@@ -1,0 +1,68 @@
+/* NavButton */
+
+@import '../../styles/css/custom-properties.css';
+
+@keyframes NavButton-bob {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-4px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.NavButton {
+	appearance: none;
+	background-color: transparent; /* stylelint-disable-line */
+	border: none;
+	border-radius: 0;
+	color: var(--white);
+	display: block;
+	font: 600 var(--type-0) 'Open Sans', sans-serif;
+	height: auto;
+	outline: none;
+	padding: 0;
+	position: relative;
+	text-align: left;
+	white-space: normal;
+	width: 120px;
+
+	&:hover {
+		& .icon {
+			animation-name: NavButton-bob;
+		}
+	}
+
+	&.isFixed {
+		position: fixed;
+		top: 0;
+	}
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.NavButton-icon {
+	animation-direction: alternate;
+	animation-duration: 1000ms;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	color: var(--white);
+	height: 20px;
+	left: 1rem;
+	position: absolute;
+	top: 0.5rem;
+	transform: perspective(1px) translateZ(0);
+	width: 20px;
+	z-index: 2;
+}
+
+.NavButton-background {
+	left: 0;
+	position: absolute;
+	top: 0;
+	transition: 200ms all ease-out;
+	z-index: 1;
+}

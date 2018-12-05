@@ -1,0 +1,36 @@
+/* DownloadLink */
+
+@import '../../styles/css/custom-properties.css';
+
+.DownloadLink {
+	align-items: center;
+	background: var(--orange);
+	border-radius: 1.5rem;
+	color: var(--white);
+	display: inline-flex;
+	font: 600 var(--type-0) 'Open Sans', sans-serif;
+	height: 2.5rem;
+	max-width: 300px;
+	padding: 0 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.DownloadLink-text {
+	flex: 1;
+	text-align: center;
+}
+
+.DownloadLink-icon {
+	display: inline-block;
+	margin: auto 0 auto 1rem;
+	max-height: 22px;
+}
+
+@media (--tablet) {
+	.DownloadLink {
+		display: inline-flex;
+		width: auto;
+	}
+}

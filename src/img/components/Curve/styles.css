@@ -1,0 +1,12 @@
+/* Curve */
+
+@import "../../styles/css/custom-properties.css";
+
+.Curve {
+  width: 100%;
+
+  & svg {
+    height: auto;
+    width: 100%;
+  }
+}
