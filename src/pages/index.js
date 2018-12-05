@@ -16,18 +16,15 @@ export default class IndexPage extends Component {
 				<section className={styles.posts}>
 					{posts.map(({ node: post }) => (
 						<div key={post.id} className={styles.post}>
-							<Img
-								sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
-							/>
-							<h2>
-								<Link className={styles.postTitle} to={post.fields.slug}>
-									{post.frontmatter.title}
-								</Link>
+							<Link className={styles.postLink} to={post.fields.slug}>
+								<Img
+									className={styles.postImage}
+									sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
+								/>
+								<h2 className={styles.postTitle}>{post.frontmatter.title}</h2>
+							</Link>
 
-								<small className={styles.postDate}>
-									{post.frontmatter.date}
-								</small>
-							</h2>
+							<small className={styles.postDate}>{post.frontmatter.date}</small>
 
 							<p className={styles.postBody}>{post.excerpt}</p>
 
@@ -58,7 +55,7 @@ export const pageQuery = graphql`
 		) {
 			edges {
 				node {
-					excerpt(pruneLength: 200)
+					excerpt(pruneLength: 260)
 					id
 					fields {
 						slug
