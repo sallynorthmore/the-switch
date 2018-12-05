@@ -7,7 +7,7 @@
 }
 
 .BarChart-title {
-	font: 700 var(--type--2) 'Open Sans', sans-serif;
+	font: 700 var(--type--2) 'OpenSans', sans-serif;
 
 	& + .figure {
 		margin-top: 1rem;
@@ -21,7 +21,7 @@
 }
 
 .BarChart-caption {
-	font: 700 var(--type--1) 'Open Sans', sans-serif;
+	font: 700 var(--type--1) 'OpenSans', sans-serif;
 	margin: 1.5rem 0 0;
 }
 
@@ -34,7 +34,7 @@
 
 .Bar-label {
 	flex: 0 0 60px;
-	font: 300 var(--type--2) 'Open Sans', sans-serif;
+	font: 300 var(--type--2) 'OpenSans', sans-serif;
 }
 
 .Bar-bar {
@@ -47,7 +47,7 @@
 
 .Bar-value {
 	display: inline-block;
-	font: 700 var(--type--2) 'Open Sans', sans-serif;
+	font: 700 var(--type--2) 'OpenSans', sans-serif;
 	padding-left: 0.25rem;
 }
 

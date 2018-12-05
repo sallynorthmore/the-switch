@@ -28,7 +28,7 @@
 }
 
 .BumpChart-value {
-	font: 700 var(--type--2) 'Open Sans', sans-serif;
+	font: 700 var(--type--2) 'OpenSans', sans-serif;
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -37,11 +37,11 @@
 
 .BumpChart-label {
 	border-top: 2px solid var(--black);
-	font: 300 var(--type--2) 'Open Sans', sans-serif;
+	font: 300 var(--type--2) 'OpenSans', sans-serif;
 	padding-top: 0.5rem;
 }
 
 .BumpChart-caption {
-	font: 700 var(--type--1) 'Open Sans', sans-serif;
+	font: 700 var(--type--1) 'OpenSans', sans-serif;
 	margin: 0.5rem 0 0;
 }

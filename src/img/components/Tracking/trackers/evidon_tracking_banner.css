@@ -21,8 +21,8 @@ body {
 
 #_evidon-message {
 	color: var(--white) !important;
-	font: 400 var(--type--2) 'Open Sans', sans-serif !important;
-	font-family: 'Open Sans', sans-serif !important;
+	font: 400 var(--type--2) 'OpenSans', sans-serif !important;
+	font-family: 'OpenSans', sans-serif !important;
 	line-height: 1rem !important;
 
 	& a {
@@ -39,7 +39,7 @@ body {
 	border-radius: 3rem !important;
 	color: var(--white) !important;
 	display: inline-flex !important;
-	font: 400 var(--type-0) 'Open Sans', sans-serif !important;
+	font: 400 var(--type-0) 'OpenSans', sans-serif !important;
 	height: 36px !important;
 	justify-content: center !important;
 	margin-top: 1rem !important;
@@ -48,7 +48,7 @@ body {
 
 .evidon-consent-link {
 	color: color-mod(var(--white) alpha(0.5)) !important;
-	font-family: 'Open Sans', sans-serif !important;
+	font-family: 'OpenSans', sans-serif !important;
 	font-size: 11px !important;
 	letter-spacing: 1.44px !important;
 	padding: 5px 0 !important;

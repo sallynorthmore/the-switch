@@ -44,7 +44,7 @@
 }
 
 .Chapter-body {
-	font: 400 var(--type-0) 'Open Sans', sans-serif;
+	font: 400 var(--type-0) 'OpenSans', sans-serif;
 	margin: 2.25rem 0 0;
 	max-width: 880px;
 	padding: 0 var(--chapterPaddingSmall);
@@ -112,7 +112,7 @@
 }
 
 .Chapter-insightBody {
-	font: 400 var(--type-0) 'Open Sans', sans-serif;
+	font: 400 var(--type-0) 'OpenSans', sans-serif;
 	margin: 1.5rem 0 0;
 	padding: 0 var(--chapterPaddingSmall);
 }
@@ -127,7 +127,7 @@
 .Chapter-linkSave {
 	color: var(--white);
 	display: inline-block;
-	font: 400 var(--type-1) 'Open Sans', sans-serif;
+	font: 400 var(--type-1) 'OpenSans', sans-serif;
 	margin: 2rem 0 0;
 	text-decoration: underline;
 	text-transform: uppercase;
@@ -280,6 +280,6 @@
 	}
 
 	.Chapter-linkSave {
-		font: 400 var(--type-0) 'Open Sans', sans-serif;
+		font: 400 var(--type-0) 'OpenSans', sans-serif;
 	}
 }

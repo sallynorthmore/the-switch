@@ -6,7 +6,7 @@
 
 .Figures-caption {
 	color: var(--white);
-	font: 600 var(--type--1) 'Open Sans', sans-serif;
+	font: 600 var(--type--1) 'OpenSans', sans-serif;
 	padding: 0.75rem 1.25rem;
 }
 
@@ -43,7 +43,7 @@
 .Figures-content {
 	align-items: center;
 	display: flex;
-	font: 700 var(--type-0) 'Open Sans', sans-serif;
+	font: 700 var(--type-0) 'OpenSans', sans-serif;
 	height: 6rem;
 	min-width: 300px;
 	padding: 1.75rem 1.25rem;
@@ -53,7 +53,7 @@
 
 .Figures-title {
 	flex: 0 0 40%;
-	font: 700 var(--type-4) 'Open Sans', sans-serif;
+	font: 700 var(--type-4) 'OpenSans', sans-serif;
 	max-width: 150px;
 	min-width: 90px;
 }
