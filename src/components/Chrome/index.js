@@ -1,13 +1,21 @@
 import React from 'react';
 // import { Link } from 'gatsby';
-import styles from './styles.module.css';
+import classNames from 'classnames';
 import Banner from '../Banner';
 import Footer from '../Footer';
+import styles from './styles.module.css';
 // import logo from '../img/logo.svg'
 
-const Chrome = ({ children }) => (
+const Chrome = ({ children, isBlogPage }) => (
 	<div className={styles.chrome}>
-		<Banner />
+		<div
+			className={classNames({
+				[styles.banner]: true,
+				[styles.isSmaller]: isBlogPage,
+			})}
+		>
+			<Banner />
+		</div>
 		<div className={styles.inner}>{children}</div>
 		<Footer />
 	</div>

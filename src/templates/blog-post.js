@@ -52,8 +52,7 @@ const BlogPost = ({ data }) => {
 	const { markdownRemark: post } = data;
 
 	return (
-		<Chrome>
-			<Helmet title="Sally Northmore" />
+		<Chrome isBlogPage>
 			<BlogPostTemplate
 				content={post.html}
 				contentComponent={HTMLContent}

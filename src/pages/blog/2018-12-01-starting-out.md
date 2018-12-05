@@ -19,4 +19,6 @@ At the time, I would not have classified myself a meat obsessive (though looking
 
 But, I’d always meant to get around to reading Foer, so I gave it a shot.
 
-What ensued surprised me: a journey that I hope to chronicle here on how I attempt to live a life that is kinder to the planet: with less plastic, less meat, fewer pollutants.
+What ensued surprised me: a journey that I hope to chronicle here on how I attempt to live a life that is kinder to the planet.
+
+Less plastic, less meat, fewer pollutants.
