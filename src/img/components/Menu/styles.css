@@ -1,0 +1,110 @@
+@import '../../styles/css/custom-properties.css';
+
+/* stylelint-disable no-descending-specificity */
+.Menu {
+	background: linear-gradient(to bottom, var(--turquoise) 10%, var(--blue) 90%);
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+
+	&.isCollapsed {
+		background: transparent;
+		position: relative;
+		width: 420px;
+		z-index: 1;
+
+		& .Menu-inner {
+			height: calc(100vh - 60px);
+			left: 0;
+			position: fixed;
+			top: 80px;
+			transition: 190ms transform ease-out;
+			width: 420px;
+		}
+
+		/* Hide download button until menu collapses left */
+		& .Menu-footer {
+			display: inline-flex;
+			justify-content: unset;
+			text-align: left;
+		}
+
+		&.isScrolled .Menu-inner {
+			transform: translateY(-80px);
+		}
+	}
+}
+
+.Menu-inner {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 640px;
+}
+
+.Menu-header {
+	align-items: center;
+	display: flex;
+	flex: 0 0 60px;
+	justify-content: flex-start;
+	padding: 2rem 2rem 0;
+	position: relative;
+	width: 100%;
+}
+
+.Menu-back {
+	height: 32px;
+	transition: transform 200ms ease-in-out;
+	width: 32px;
+
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+
+.Menu-body {
+	flex: 0 0 60vh;
+	margin-top: 1rem;
+	overflow: scroll;
+	position: relative;
+	width: 100%;
+}
+
+.Menu-bodyInner {
+	color: var(--white);
+	font: 400 1rem/2rem 'Open Sans', sans-serif; /* Custom font */ /* stylelint-disable-line */
+	height: 100%;
+	padding: 1rem 2rem 2rem;
+	width: 100%;
+}
+
+.Menu-link {
+	box-shadow: inset 0px -6px var(--orange);
+	color: var(--white);
+	font-weight: 700;
+	position: relative;
+	text-decoration: none;
+	transition: 200ms box-shadow ease-in-out;
+
+	&:hover {
+		box-shadow: inset 0px -10px var(--orange);
+	}
+
+	&.isActive {
+		box-shadow: inset 0px -42px var(--orange);
+	}
+}
+
+.Menu-footer {
+	align-items: center;
+	display: flex;
+	display: none;
+	flex: 0 0 5rem;
+	justify-content: center;
+	padding: 0 2rem;
+	position: relative;
+	width: 100%;
+}

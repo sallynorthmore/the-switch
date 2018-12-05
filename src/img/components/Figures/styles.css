@@ -1,0 +1,69 @@
+/* Figures */
+@import '../../styles/css/custom-properties.css';
+
+.Figures {
+}
+
+.Figures-caption {
+	color: var(--white);
+	font: 600 var(--type--1) 'Open Sans', sans-serif;
+	padding: 0.75rem 1.25rem;
+}
+
+.Figures-item {
+	position: relative;
+
+	& .Figures-background {
+		background: white;
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 0;
+	}
+
+	&:nth-child(1) .Figures-background {
+		opacity: 0.4;
+	}
+
+	&:nth-child(2) .Figures-background {
+		opacity: 0.6;
+	}
+
+	&:nth-child(3) .Figures-background {
+		opacity: 0.75;
+	}
+	&:nth-child(4) .Figures-background {
+		opacity: 0.9;
+	}
+}
+
+.Figures-content {
+	align-items: center;
+	display: flex;
+	font: 700 var(--type-0) 'Open Sans', sans-serif;
+	height: 6rem;
+	min-width: 300px;
+	padding: 1.75rem 1.25rem;
+	position: relative;
+	z-index: 2;
+}
+
+.Figures-title {
+	flex: 0 0 40%;
+	font: 700 var(--type-4) 'Open Sans', sans-serif;
+	max-width: 150px;
+	min-width: 90px;
+}
+
+@media (--desktop) {
+	.Figures-caption {
+		padding: 0.75rem 2.5rem;
+	}
+
+	.Figures-content {
+		padding: 1.75rem 2.5rem;
+	}
+}

@@ -1,0 +1,148 @@
+/* Banner */
+
+@import '../../styles/css/custom-properties.css';
+
+.Banner {
+	align-items: center;
+	display: grid;
+	grid-template-areas:
+		'left left left'
+		'middle middle right';
+	grid-template-columns: 100px 1fr 1fr;
+	grid-template-rows: 1fr;
+	justify-content: space-between;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+
+.Banner-left {
+	background: var(--black);
+	grid-area: left;
+}
+
+.Banner-middle {
+	grid-area: middle;
+	padding-left: 10px;
+}
+
+.Banner-right {
+	align-items: center;
+	display: flex;
+	grid-area: right;
+	justify-content: flex-end;
+}
+
+.Banner-right,
+.Banner-middle {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.Banner-left,
+.Banner-middle,
+.Banner-right {
+	height: 40px;
+}
+
+.Banner-text {
+	color: var(--gray);
+	font: 400 var(--type--2) 'Open Sans', sans-serif;
+}
+
+.Banner-text:focus {
+	cursor: default;
+}
+
+.Banner-sponsorship {
+	color: var(--gray);
+	font: 400 var(--type--2) 'Open Sans', sans-serif;
+	margin-right: 7px;
+}
+
+.Banner-adFeature {
+	color: var(--black);
+	font: 400 var(--type--2) 'Open Sans', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.75px;
+	opacity: 0.6;
+	padding: 12px 0 0;
+	text-transform: uppercase;
+}
+
+.Banner-adFeature:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.Banner-adFeatureIcon {
+	display: inline-block;
+	margin-left: 0.5rem;
+}
+
+.Banner-partnerWrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.Banner-partnerWrapper:not(:last-child) {
+	margin-right: 30px;
+}
+
+.Banner-economistLogo {
+	display: flex;
+}
+
+.Banner-economistLogo img {
+	height: 40px;
+	width: auto;
+}
+
+.Banner-sponsor {
+	display: block;
+	height: 40px;
+	overflow: hidden;
+
+	& > svg {
+		height: auto;
+		width: 40px;
+	}
+}
+
+.Banner-tooltip {
+	left: 50%;
+	max-width: 430px;
+	pointer-events: none;
+	position: absolute;
+	top: 100%;
+	transform: translateX(-50%);
+	width: 90vw;
+	z-index: 10;
+}
+
+.Banner-tooltipShown {
+	pointer-events: auto;
+}
+
+@media (--desktop) {
+	.Banner-tooltip {
+		left: 50%;
+		top: 67px;
+		transform: translateX(-50%);
+	}
+
+	.Banner-economistLogo {
+		height: 40px;
+		width: 80px;
+	}
+
+	.Banner-economistLogo img {
+		height: 100%;
+		width: 100%;
+	}
+
+	.Banner-adFeature {
+		letter-spacing: normal;
+	}
+}

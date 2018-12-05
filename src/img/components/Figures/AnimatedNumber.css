@@ -1,0 +1,12 @@
+@import '../../styles/css/custom-properties.css';
+
+.AnimatedNumber {
+}
+
+.AnimatedNumber-text {
+	color: var(--black);
+	display: inline-block;
+	font: 700 var(--type-4) 'Open Sans', sans-serif;
+	position: relative;
+	will-change: transform;
+}

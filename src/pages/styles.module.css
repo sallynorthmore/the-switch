@@ -11,15 +11,16 @@
 	margin: 3rem 0 0;
 }
 
-.postDate {
-	font: 700 var(--type--1) 'Open Sans', sans-serif;
-}
-
 .postTitle {
 	color: var(--black);
 	display: block;
 	font: 700 var(--type-2) 'Lora', sans-serif;
+	margin: 1rem 0 0;
 	text-decoration: none;
+}
+
+.postDate {
+	font: 700 var(--type--1) 'Open Sans', sans-serif;
 }
 
 .postBody {

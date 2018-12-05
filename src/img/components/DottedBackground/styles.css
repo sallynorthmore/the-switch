@@ -1,0 +1,15 @@
+/* DotsBackground */
+
+@import '../../styles/css/custom-properties.css';
+
+.DottedBackground {
+	font: 400 var(--type-3) 'NHaasGroteskDSPro-55Rg', sans-serif;
+	height: 100%;
+}
+
+.DottedBackground-canvas {
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}

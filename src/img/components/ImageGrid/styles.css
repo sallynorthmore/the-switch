@@ -1,0 +1,21 @@
+/* ImageGrid */
+
+@import "../../styles/css/custom-properties.css";
+
+.ImageGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ImageGrid-item {
+  flex: 0 0 50%;
+  font: 400 var(--type--2) 'Open Sans', sans-serif;
+  padding: 1rem 0 0 1rem;
+  text-align: center;
+}
+
+@media (--tablet) {
+  .ImageGrid-item {
+    flex: 0 0 25%;
+  }
+}

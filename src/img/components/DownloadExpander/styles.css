@@ -1,0 +1,63 @@
+/* DownloadExpander */
+
+@import '../../styles/css/custom-properties.css';
+
+.DownloadExpander {
+	/* align-items: center;
+	display: inline-flex; */
+
+	&.isOpen {
+		& .DownloadExpander-button {
+			opacity: 0;
+			pointer-events: none;
+			transition: 225ms opacity cubic-bezier(0, 0, 0.2, 1);
+			visibility: 0;
+		}
+
+		& .DownloadExpander-link {
+			opacity: 1;
+			pointer-events: auto;
+			transition: 225ms opacity cubic-bezier(0, 0, 0.2, 1);
+			visibility: visible;
+		}
+	}
+}
+
+/* stylelint-disable-next-line */
+.DownloadExpander-link {
+	flex: 1;
+	opacity: 0;
+	pointer-events: none;
+	transition: 225ms opacity cubic-bezier(0, 0, 0.2, 1);
+	visibility: 0;
+}
+
+/* stylelint-disable-next-line */
+.DownloadExpander-button {
+	align-items: center;
+	appearance: none;
+	background: var(--orange);
+	border: 0 transparent;
+	border-radius: 100%;
+	color: var(--white);
+	display: inline-flex;
+	flex: 0 0 3.75rem;
+	height: 3.75rem;
+	justify-content: center;
+	margin-left: 0.5rem;
+	opacity: 1;
+	outline: none;
+	padding: 0;
+	pointer-events: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: 225ms opacity cubic-bezier(0, 0, 0.2, 1);
+	visibility: visible;
+	width: 3.75rem;
+	z-index: 0;
+
+	& svg {
+		margin: auto;
+	}
+}

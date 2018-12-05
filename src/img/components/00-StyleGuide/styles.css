@@ -1,0 +1,46 @@
+/* StyleGuide */
+
+@import '../../styles/css/custom-properties.css';
+
+.Styleguide-items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -0.5rem 0 0 -0.5rem;
+}
+
+.Styleguide-item {
+	display: block;
+	margin-top: calc(0.5rem * 3);
+	padding: 0.5rem 0 0 0.5rem;
+	text-align: center;
+	width: 120px;
+}
+
+.Styleguide-figure {
+	border-radius: 100%;
+	height: 4rem;
+	margin: auto;
+	width: 4rem;
+}
+
+.Styleguide-title {
+	font: 400 var(--type-3) 'NHaasGroteskDSPro-55Rg', sans-serif;
+	margin: 3rem 0 0;
+}
+
+.Styleguide-subtitle {
+	font: 400 var(--type-1) 'Open Sans', sans-serif;
+	margin: 1rem 0 0;
+
+	& > span {
+		display: block;
+	}
+}
+
+.Styleguide-types {
+	margin-top: 1.5rem;
+}
+
+.Styleguide-details {
+	font: 300 var(--type--2) 'Open Sans', sans-serif;
+}

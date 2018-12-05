@@ -1,0 +1,80 @@
+@import '../../styles/css/custom-properties.css';
+
+.ScrollingStats {
+	position: relative;
+}
+
+.ScrollingStats-inner {
+	position: relative;
+}
+
+.ScrollingStats-graphic {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100px;
+}
+
+.ScrollingStats-title {
+	font: 700 var(--type--1) 'Open Sans', sans-serif;
+	margin: 1rem 0 0;
+	position: relative;
+	z-index: 2;
+}
+
+.ScrollingStats-circle {
+	background: var(--turquoise);
+	background-image: linear-gradient(var(--blue), var(--turquoise));
+	border-radius: 100%;
+	height: 250px;
+	transform-origin: center;
+	transition: 200ms transform ease-out;
+	width: 250px;
+	z-index: 0;
+
+	&.isDiamond {
+		border-radius: 0.75rem;
+		position: relative;
+		transform: rotate(45deg);
+	}
+}
+
+.ScrollingStats-label {
+	color: var(--white);
+	font: 400 var(--type--2) 'Open Sans', sans-serif;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%, -60%);
+	width: 100px;
+	z-index: 5;
+}
+
+.ScrollingStats-value {
+	font: 700 var(--type--2) 'Open Sans', sans-serif;
+}
+
+.ScrollingStats-captions {
+	height: 400px;
+	max-width: 320px;
+	position: absolute;
+	right: 0%;
+	top: 100px;
+	transform: translate3d(10px, -40%, 0);
+	width: 75%;
+	z-index: 7;
+}
+
+@media (--desktop) {
+	.ScrollingStats-caption {
+		margin-top: -40px;
+		max-width: 320px;
+		min-width: 320px;
+	}
+
+	.ScrollingStats-graphic {
+		left: 70px;
+	}
+}

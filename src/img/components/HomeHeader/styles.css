@@ -1,0 +1,44 @@
+/* HomeHeader */
+
+@import '../../styles/css/custom-properties.css';
+
+.HomeHeader {
+	width: 65vw;
+	z-index: 0;
+}
+
+.HomeHeader-svg {
+	width: 100%;
+}
+
+.HomeHeader-text-small {
+	fill: var(--white);
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.HomeHeader-text-color,
+.HomeHeader-circle {
+	fill: var(--turquoise);
+}
+
+/* tablets */
+@media (min-width: 500px) {
+	.HomeHeader {
+		width: 50vw;
+	}
+}
+
+@media (--desktop) {
+	.HomeHeader {
+		width: 400px;
+	}
+}
+
+/* large desktop */
+@media (min-width: 1600px) {
+	.HomeHeader {
+		width: 500px;
+	}
+}

@@ -1,0 +1,69 @@
+/* Chart */
+
+@import '../../styles/css/custom-properties.css';
+
+.BarChart {
+	width: 100%;
+}
+
+.BarChart-title {
+	font: 700 var(--type--2) 'Open Sans', sans-serif;
+
+	& + .figure {
+		margin-top: 1rem;
+	}
+}
+
+.BarChart-figure {
+	margin: 0;
+
+	/* &.isVisible {} */
+}
+
+.BarChart-caption {
+	font: 700 var(--type--1) 'Open Sans', sans-serif;
+	margin: 1.5rem 0 0;
+}
+
+.Bar {
+	display: flex;
+	margin-top: 0.5rem;
+	position: relative;
+	width: 100%;
+}
+
+.Bar-label {
+	flex: 0 0 60px;
+	font: 300 var(--type--2) 'Open Sans', sans-serif;
+}
+
+.Bar-bar {
+	background: linear-gradient(to left, var(--blue), var(--turquoise));
+	border-radius: 2px;
+	height: 2px;
+	margin-left: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.Bar-value {
+	display: inline-block;
+	font: 700 var(--type--2) 'Open Sans', sans-serif;
+	padding-left: 0.25rem;
+}
+
+.Bar-point {
+	background: var(--blue);
+	border-radius: 50%;
+	display: block;
+	flex: 0 0 10px;
+	height: 10px;
+	margin: 0 0 0 2px;
+	position: relative;
+	top: 6px;
+}
+
+@media (--desktop) {
+	.Bar-point {
+		top: 5px;
+	}
+}

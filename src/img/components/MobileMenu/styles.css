@@ -1,0 +1,117 @@
+@import '../../styles/css/custom-properties.css';
+
+.MobileMenu {
+	background: linear-gradient(to bottom, var(--turquoise) 10%, var(--blue) 90%);
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 3;
+}
+
+.MobileMenu-header {
+	align-items: center;
+	display: flex;
+	flex: 0 0 60px;
+	justify-content: flex-start;
+	padding: 1.5rem 1rem 0;
+	position: relative;
+	width: 100%;
+
+	&::after {
+		background: linear-gradient(
+			to bottom,
+			var(--turquoise) 0%,
+			rgba(0, 173, 181, 0) 100%
+		);
+		bottom: -40px;
+		content: '';
+		height: 40px;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+.MobileMenu-back {
+	height: 32px;
+	transition: transform 200ms ease-in-out;
+	width: 32px;
+
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+
+.MobileMenu-body {
+	flex: 1;
+	overflow: scroll;
+	position: relative;
+	width: 100%;
+}
+
+.MobileMenu-bodyInner {
+	color: var(--white);
+	font: 400 1.375rem/2.5rem 'Open Sans', sans-serif; /* Custom font */ /* stylelint-disable-line */
+	height: auto;
+	left: 0;
+	padding: 1rem;
+	padding-bottom: 6rem;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.MobileMenu-link {
+	box-shadow: inset 0px -6px var(--orange);
+	color: var(--white);
+	font-weight: 700;
+	position: relative;
+	text-decoration: none;
+	transition: 200ms box-shadow ease-in-out;
+
+	&:hover {
+		box-shadow: inset 0px -10px var(--orange);
+	}
+
+	&.isActive {
+		box-shadow: inset 0px -42px var(--orange);
+	}
+}
+
+.MobileMenu-footer {
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	flex: 0 0 100px;
+	height: 100px;
+	justify-content: center;
+	left: 0;
+	padding: 0 1rem;
+	position: absolute;
+	width: 100%;
+
+	& .extraneous {
+		z-index: 1;
+	}
+
+	&::after {
+		background: linear-gradient(
+			to bottom,
+			rgba(0, 121, 181, 0) 0%,
+			color-mod(var(--blue) alpha(0.5)) 80%,
+			var(--blue) 100%
+		);
+		content: '';
+		height: 120px;
+		left: 0;
+		position: absolute;
+		top: -20px;
+		width: 100%;
+		z-index: 0;
+	}
+}

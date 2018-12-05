@@ -1,0 +1,64 @@
+/* Evidon's injected cookie policy banner */
+
+/* stylelint-disable */
+
+@import '../../../styles/css/custom-properties.css';
+
+body {
+	display: flex;
+	flex-direction: column-reverse; /* 	 Required to position evidon_banner at the top of the page per TEG requirements */
+	/* flex-direction: column; */
+}
+
+#_evidon_banner {
+	background: var(--black) !important;
+	bottom: auto !important;
+	display: block !important;
+	margin: 0 0 auto !important;
+	position: fixed !important;
+	top: 0 !important;
+}
+
+#_evidon-message {
+	color: var(--white) !important;
+	font: 400 var(--type--2) 'Open Sans', sans-serif !important;
+	font-family: 'Open Sans', sans-serif !important;
+	line-height: 1rem !important;
+
+	& a {
+		color: var(--white) !important;
+		font-weight: 700 !important;
+		text-decoration: underline !important;
+	}
+}
+
+#_evidon-accept-button {
+	align-items: center !important;
+	background: var(--black) !important;
+	border: 2px solid var(--white) !important;
+	border-radius: 3rem !important;
+	color: var(--white) !important;
+	display: inline-flex !important;
+	font: 400 var(--type-0) 'Open Sans', sans-serif !important;
+	height: 36px !important;
+	justify-content: center !important;
+	margin-top: 1rem !important;
+	width: 88px !important;
+}
+
+.evidon-consent-link {
+	color: color-mod(var(--white) alpha(0.5)) !important;
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 11px !important;
+	letter-spacing: 1.44px !important;
+	padding: 5px 0 !important;
+	text-decoration: none;
+}
+
+@media (min-height: 800px), (--tablet) {
+	#_evidon_banner {
+		display: flex !important;
+	}
+}
+
+/* stylelint-enable */

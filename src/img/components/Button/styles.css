@@ -1,0 +1,56 @@
+/* Button */
+
+@import '../../styles/css/custom-properties.css';
+
+.Button {
+	background: var(--orange);
+	border: none;
+	border-radius: 1.5rem;
+	color: var(--white);
+	display: inline-block;
+	height: 2.5rem;
+	max-width: 300px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+
+	&::after {
+		background: var(--orange);
+		border-radius: 1.5rem;
+		content: '';
+		height: 100%;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		transition: width 300ms, height 300ms;
+		width: 100%;
+		z-index: -1;
+	}
+
+	&:hover {
+		cursor: pointer;
+
+		&::after {
+			height: calc(100% + 6px);
+			width: calc(100% + 6px);
+		}
+	}
+
+	&:focus {
+		outline: none;
+
+		&::after {
+			box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.35);
+		}
+	}
+}
+
+.Button-text {
+	align-items: center;
+	display: flex;
+	font: 600 var(--type-0) 'Open Sans', sans-serif;
+	justify-content: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
