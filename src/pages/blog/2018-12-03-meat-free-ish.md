@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 'Meatfree... ish'
-date: 2018-12-02T17:00:00.000Z
+date: 2018-12-03T17:00:00.000Z
 featuredImage: '/img/oatly.jpg'
 description: >-
   3. Meat reduce: Avoiding meat and dairy is ‘single biggest way’ to reduce your impact on Earth
