@@ -12,7 +12,7 @@ export default class IndexPage extends Component {
 		const { edges: posts } = data.allMarkdownRemark;
 
 		return (
-			<Chrome>
+			<Chrome isHome>
 				<section className={styles.posts}>
 					{posts.map(({ node: post }) => (
 						<div key={post.id} className={styles.post}>

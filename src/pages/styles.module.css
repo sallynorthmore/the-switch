@@ -34,3 +34,20 @@
 	font: 400 var(--type-0) 'PT Serif', sans-serif;
 	margin: 1rem 0 0;
 }
+
+@media (--desktop) {
+	.posts {
+		align-items: flex-start;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.post {
+		flex: 0 0 33%;
+		padding: 1rem 0 0 2rem;
+
+		&:not(:first-child) {
+			margin: 0 0 0;
+		}
+	}
+}
