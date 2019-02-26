@@ -18,8 +18,10 @@
 		"generate": "plop --plopfile generator/index.js"
 	},
 	"dependencies": {
+		"@vx/gradient": "0.0.183",
 		"bulma": "^0.7.0",
 		"classnames": "^2.2.6",
+		"flubber": "^0.4.2",
 		"gatsby": "^2.0.0",
 		"gatsby-image": "^2.0.10",
 		"gatsby-plugin-google-analytics": "^2.0.8",
@@ -47,6 +49,7 @@
 		"react": "^16.2.0",
 		"react-dom": "^16.4.1",
 		"react-helmet": "^5.2.0",
+		"react-spring": "^7.0.0",
 		"uuid": "^3.2.1"
 	},
 	"devDependencies": {
