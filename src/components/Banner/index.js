@@ -8,7 +8,7 @@ const Banner = () => (
 		<h1>
 			<Link className={styles.title} to="/">
 				The Sw
-				<span>
+				<span className={styles.bottle}>
 					<BottleAnimation />
 				</span>
 				tch

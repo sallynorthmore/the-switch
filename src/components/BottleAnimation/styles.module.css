@@ -1,5 +1,9 @@
 /* BottleAnimation */
 
 .BottleAnimation {
+	color: inherit;
 	display: inline-block;
+	position: relative;
+	transform: scale(2);
+	transform-origin: center;
 }

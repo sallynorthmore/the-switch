@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Spring, animated } from 'react-spring';
 import { interpolate } from 'flubber';
-import { LinearGradient } from '@vx/gradient';
 
 import styles from './styles.module.css';
 
@@ -26,14 +25,28 @@ class BottleAnimation extends React.Component {
 		});
 		return (
 			<div className={styles.BottleAnimation}>
-				<svg width="30px" height="30px" viewBox="0 0 8 20">
-					<LinearGradient id="gradient" from="#417505" to="#fbc2eb" />;
-					<g fill="#gradient">
-						<Spring reset native delay="4000" from={{ t: 0 }} to={{ t: 1 }}>
-							{({ t }) => <animated.path d={t.interpolate(interpolator)} />}
-						</Spring>
-					</g>
-				</svg>
+				<Spring
+					reset
+					native
+					delay="2000"
+					from={{ t: 0, x: 15 }}
+					to={{ t: 1, x: 0 }}
+				>
+					{({ t, x }) => (
+						<animated.svg
+							width="20px"
+							height="25px"
+							style={{
+								transform: x.interpolate(x => `translate3d(${x}%, 0,0)`),
+							}}
+							viewBox="0 0 20 25"
+						>
+							<g fill="currentColor">
+								<animated.path d={t.interpolate(interpolator)} />
+							</g>
+						</animated.svg>
+					)}
+				</Spring>
 			</div>
 		);
 	}
