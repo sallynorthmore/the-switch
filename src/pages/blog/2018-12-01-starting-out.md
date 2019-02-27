@@ -4,7 +4,7 @@ title: 'So, I read this book...'
 date: 2018-12-01T17:00:00.000Z
 featuredImage: 'post-1.jpg'
 description: >-
-  1. Challenge accepted
+  Challenge accepted
 tags:
   - vegetarianism
 ---

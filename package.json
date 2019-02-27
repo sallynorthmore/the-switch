@@ -37,6 +37,8 @@
 		"gatsby-remark-images": "^3.0.0",
 		"gatsby-remark-relative-images": "^0.2.0",
 		"gatsby-source-filesystem": "^2.0.1",
+		"gatsby-source-instagram": "^0.2.5",
+		"gatsby-source-instagram-all": "^2.0.5",
 		"gatsby-transformer-remark": "^2.1.1",
 		"gatsby-transformer-sharp": "^2.1.1",
 		"lodash": "^4.17.5",
@@ -54,6 +56,7 @@
 	},
 	"devDependencies": {
 		"custom-properties": "^1.0.1",
+		"eslint": "^5.9.0",
 		"eslint-config-prettier": "^3.3.0",
 		"eslint-config-react-tools": "1.x.x",
 		"eslint-config-standard": "^12.0.0",
@@ -63,7 +66,6 @@
 		"eslint-plugin-promise": "^4.0.1",
 		"eslint-plugin-react": "^7.6.1",
 		"eslint-plugin-standard": "^4.0.0",
-		"eslint": "^5.9.0",
 		"postcss-color-mix": "^1.1.0",
 		"postcss-custom-media": "^7.0.7",
 		"postcss-grid": "^2.0.0",
@@ -74,10 +76,10 @@
 		"postcss-preset-env": "^6.1.1",
 		"prettier": "1.15.2",
 		"rimraf": "^2.6.2",
+		"stylelint": "^9.8.0",
 		"stylelint-config-recommended": "^2.1.0",
 		"stylelint-declaration-use-variable-or-custom-fn": "^1.0.1",
 		"stylelint-number-z-index-constraint": "^2.0.0",
-		"stylelint-order": "^1.0.0",
-		"stylelint": "^9.8.0"
+		"stylelint-order": "^1.0.0"
 	}
 }

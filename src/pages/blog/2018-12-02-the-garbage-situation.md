@@ -4,7 +4,7 @@ title: 'The garbage sitch'
 date: 2018-12-02T17:00:00.000Z
 featuredImage: 'post-2.jpg'
 description: >-
-  2. Take stock of your output
+  Take stock of your output
 tags:
   - wastefree
   - pollution

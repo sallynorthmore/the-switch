@@ -4,7 +4,7 @@ title: 'Plastic-free Shampoo and Conditioner'
 date: 2018-12-14T17:00:00.000Z
 featuredImage: '/img/bars.jpg'
 description: >-
-  4. Plastic-free shampoo and conditioner is a pretty sweet deal
+  Plastic-free shampoo and conditioner is a pretty sweet deal
 tags:
   - shampoo
   - conditioner
