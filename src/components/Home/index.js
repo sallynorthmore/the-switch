@@ -4,8 +4,6 @@ import { Element, scroller } from 'react-scroll';
 import Grid from '../Grid';
 import Message from '../Message';
 import Footer from '../Footer';
-// import { HomeComponent, Headline, Title, Projects } from './styles';
-// import {} from './styles';
 
 class Home extends Component {
 	state = {

@@ -2,11 +2,25 @@
 
 @import '../../styles/css/custom-properties.css';
 
+@keyframes color-change {
+	0% {
+		color: black;
+	}
+	100% {
+		color: #417505;
+	}
+}
+
 .banner {
 	text-align: center;
 }
 
 .title {
+	animation-delay: 2s;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-name: color-change;
+	animation-timing-function: ease-in-out;
 	color: var(--black);
 	font: 400 var(--type-4) 'Carter One', serif;
 	text-decoration: none;
@@ -21,4 +35,15 @@
 	margin: auto;
 	max-width: 220px;
 	width: 80%;
+}
+
+.bottle {
+	animation-delay: 1.7s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-name: color-change;
+	animation-timing-function: ease-in-out;
+	left: 7px;
+	position: relative;
+	top: -5px;
 }

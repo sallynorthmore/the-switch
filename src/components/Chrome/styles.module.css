@@ -21,3 +21,7 @@
 	max-width: 640px;
 	text-align: left;
 }
+
+.isHome {
+	max-width: 1020px;
+}

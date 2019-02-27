@@ -6,7 +6,7 @@ import Footer from '../Footer';
 import styles from './styles.module.css';
 // import logo from '../img/logo.svg'
 
-const Chrome = ({ children, isBlogPage }) => (
+const Chrome = ({ children, isBlogPage, isHome }) => (
 	<div className={styles.chrome}>
 		<div
 			className={classNames({
@@ -16,7 +16,14 @@ const Chrome = ({ children, isBlogPage }) => (
 		>
 			<Banner />
 		</div>
-		<div className={styles.inner}>{children}</div>
+		<div
+			className={classNames({
+				[styles.inner]: true,
+				[styles.isHome]: isHome,
+			})}
+		>
+			{children}
+		</div>
 		<Footer />
 	</div>
 );

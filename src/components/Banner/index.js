@@ -1,13 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import BottleAnimation from '../BottleAnimation';
 import styles from './styles.module.css';
-// import logo from '../img/logo.svg'
 
 const Banner = () => (
 	<header role="banner" className={styles.banner}>
 		<h1>
 			<Link className={styles.title} to="/">
-				The Switch
+				The Sw
+				<span className={styles.bottle}>
+					<BottleAnimation />
+				</span>
+				tch
 			</Link>
 		</h1>
 		<p className={styles.tagline}>
