@@ -16,20 +16,25 @@ export default class IndexPage extends Component {
 				<section className={styles.posts}>
 					{posts.map(({ node: post }) => (
 						<div key={post.id} className={styles.post}>
-							<Link className={styles.postLink} to={post.fields.slug}>
+							<Link
+								className={styles.postLink}
+								to={post.fields.slug}
+								title={post.frontmatter.title}
+							>
 								<Img
 									className={styles.postImage}
 									sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
 								/>
-								<h2 className={styles.postTitle}>{post.frontmatter.title}</h2>
-							</Link>
-
-							<small className={styles.postDate}>{post.frontmatter.date}</small>
-
-							<p className={styles.postBody}>{post.excerpt}</p>
-
-							<Link className={styles.postLink} to={post.fields.slug}>
-								Keep Reading →
+								{/*
+								<h2 className={styles.postTitle}>{post.frontmatter.title}</h2> 
+								<small className={styles.postDate}>{post.frontmatter.date}</small>
+								<Link className={styles.postLink} to={post.fields.slug}>
+									Keep Reading →
+								</Link>
+								*/}
+								<p className={styles.postBody}>
+									{post.frontmatter.description}
+								</p>
 							</Link>
 						</div>
 					))}
@@ -62,6 +67,7 @@ export const pageQuery = graphql`
 					}
 					frontmatter {
 						title
+						description
 						templateKey
 						date(formatString: "MMMM DD, YYYY")
 						featuredImage {

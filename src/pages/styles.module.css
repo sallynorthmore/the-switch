@@ -33,6 +33,11 @@
 	display: block;
 	font: 400 var(--type-0) 'PT Serif', sans-serif;
 	margin: 1rem 0 0;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 @media (--desktop) {
