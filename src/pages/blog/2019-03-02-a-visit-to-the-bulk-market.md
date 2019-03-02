@@ -7,4 +7,7 @@ tags:
   - recycle
   - reuse
 ---
+
 Today's visit to the @bulkmarketuk in Hackney, refilling olive oil, laundry liquid, washing up liquid, baking soda ♻️
+
+![](/img/bulkmarket.jpg)
