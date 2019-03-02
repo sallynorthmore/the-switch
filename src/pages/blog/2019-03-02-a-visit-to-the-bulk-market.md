@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: A visit to the bulk market
 date: 2019-02-03T20:32:16.464Z
+featuredImage: '/img/bulkmarket.jpg'
 description: Bulking up
 tags:
   - recycle

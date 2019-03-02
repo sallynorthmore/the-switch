@@ -3,6 +3,7 @@ templateKey: blog-post
 title: SodaStream
 date: 2019-02-24T20:29:55.873Z
 description: Make your own fizzy water
+featuredImage: '/img/sodastream.jpg'
 tags:
   - zerowaste
 ---

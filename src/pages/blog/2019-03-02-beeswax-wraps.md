@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: Beeswax Wraps
 date: 2019-01-16T20:39:10.772Z
+featuredImage: '/img/abeego.jpg'
 description: Use beeswax wraps instead of plastic wrap / cling film (hello UK!)
 tags:
   - nosingleuse

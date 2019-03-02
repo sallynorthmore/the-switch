@@ -3,6 +3,7 @@ templateKey: blog-post
 title: Saving Fresh Herbs
 date: 2019-03-02T20:25:32.762Z
 description: Store chopped fresh herbs in the freezer
+featuredImage: '/img/dhives.jpg'
 tags:
   - zerowastehome
 ---

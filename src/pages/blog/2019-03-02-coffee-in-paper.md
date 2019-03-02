@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: Coffee in Paper
 date: 2019-03-02T20:26:26.795Z
+featuredImage: '/img/coffee.jpg'
 description: Buy coffee in paper
 tags:
   - plasticfree

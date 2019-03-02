@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: Charcoal toothpaste
 date: 2019-02-22T20:31:06.025Z
+featuredImage: '/img/charcoal.jpg'
 description: Attempting to use charcoal dental powder as a toothpaste substitute...
 tags:
   - plasticfree
