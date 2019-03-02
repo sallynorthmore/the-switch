@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: Bamboo Toothbrush
 date: 2019-01-11T20:43:14.325Z
+featuredImage: '/img/toothbrush.jpg'
 description: "When it's time to replace, avoid plastic"
 tags:
   - natural

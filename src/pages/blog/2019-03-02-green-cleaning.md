@@ -2,10 +2,12 @@
 templateKey: blog-post
 title: Green Cleaning
 date: 2019-03-02T20:16:19.692Z
+featuredImage: '/img/cleaning.jpg'
 description: This is roughly all you need to clean most things in your house.
 tags:
   - greencleaning
 ---
+
 This is roughly all you need to clean most things in your house:
 
 ![](/img/cleaning.jpg)

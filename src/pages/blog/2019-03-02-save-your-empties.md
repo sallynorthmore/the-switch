@@ -3,6 +3,7 @@ templateKey: blog-post
 title: Save your empties
 date: 2019-03-02T20:41:50.866Z
 description: Save your empties
+featuredImage: '/img/empties.jpg'
 tags:
   - recycle reuse
 ---

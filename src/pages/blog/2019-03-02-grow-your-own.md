@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: Grow your own
 date: 2019-02-25T20:28:30.057Z
+featuredImage: '/img/charcoal.jpg'
 description: "Grow your own veggies \U0001F331"
 tags:
   - gardening
