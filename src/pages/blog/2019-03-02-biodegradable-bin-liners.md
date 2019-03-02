@@ -3,7 +3,6 @@ templateKey: blog-post
 title: Biodegradable bin liners
 date: 2019-02-03T20:33:34.733Z
 description: Switch to degradable
-featuredImage: '/img/bulkmarket.jpg'
 tags:
   - biodegradable
 ---

@@ -21,10 +21,13 @@ export default class IndexPage extends Component {
 								to={post.fields.slug}
 								title={post.frontmatter.title}
 							>
-								<Img
-									className={styles.postImage}
-									sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
-								/>
+								{post.frontmatter.featuredImage && (
+									<Img
+										className={styles.postImage}
+										sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
+									/>
+								)}
+
 								{/*
 								<h2 className={styles.postTitle}>{post.frontmatter.title}</h2> 
 								<small className={styles.postDate}>{post.frontmatter.date}</small>
