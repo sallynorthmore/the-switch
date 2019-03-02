@@ -2,12 +2,15 @@
 templateKey: blog-post
 title: Biodegradable bin liners
 date: 2019-02-03T20:33:34.733Z
+featuredImage: '/img/d2w.jpg'
 description: Switch to degradable
 tags:
   - biodegradable
 ---
 
 Finally got around to buying biodegradable bin liners. Still plastic but less harmful, I hope.
+
+![](/img/d2w.jpg)
 
 Anyone out there know if these are truly better for the planet than the norms?
 
